@@ -1,0 +1,222 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+  height: 100%;
+}
+
+body {
+  padding-top:  0;
+  margin: 0;
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 200;
+  background: papayawhip url(immi.jpg) center 5em no-repeat;
+  background-size: 500px;
+  color: #333;
+}
+
+.navbar-light {
+    background-color: cadetblue;
+}
+
+.pict {
+    width: 400px;
+    height: 400px;
+}
+
+footer {
+  font-size: 0.75em;
+  color: silver;
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+}
+
+footer a {
+  color: #f80;
+}
+
+header {
+  margin: 2em 0;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 3em;
+}
+
+h2 {
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+
+section {
+    margin: 3em auto 1em auto;
+    width: 500px;
+    
+    position: static;
+}
+
+button {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 80px;
+  height: 80px;
+  border: 0;
+  border-radius: 50%;
+  padding: .7em 1em;
+  margin: 0em auto 1em 11em;
+  margin-top: 1em;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(180deg, #39C2C9 0%, #3FC8C9 80%, #3FC8C9 100%);
+  box-shadow: 2px 5px 30px rgba(63, 200, 201, .4);
+
+  
+  transition: all 0.3s ease-out;
+}
+button .fa {
+  font-size: 55px;
+  line-height: 70px;
+  margin: 0;
+  text-shadow: 1px 2px 2px #2a8b90;
+}
+button:hover {
+  transform: scale(.92);
+}
+button:active {
+  filter: brightness(.8);
+}
+button:focus {
+  outline: 0;
+}
+
+.pressthe {
+    float: right;
+    padding-top: 2em;
+    text-align: right;
+    margin-left: 1em;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.3em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 10px;
+}
+.fa-github::before {
+    content: "\f09b";
+}
+
+.buttonshow {
+    background-color: #2a8b90;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-decoration: none;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+    padding: 10px 15px;
+    color: white;
+    margin: 0 auto 10px 810px;
+    display: block;
+    float: left;
+    
+     transition: all 0.3s ease-out;
+}
+
+.buttonshow:hover {
+    color: white;
+    text-decoration: none;
+    transform: scale(.9);
+    
+}
+
+.buttonshow:active {
+    filter: brightness(.8);
+}
+
+.buttonshow:focus {
+  outline: 0;
+}
+
+.reminder {
+    text-align: right;
+}
+
+.text-output {
+    float: none;
+    border: 1px solid white;
+    background-color: rgba(250, 250, 250, 0.7);
+    border-radius: 20px;
+    margin: 23em 1em 0em 5em;
+    padding: 15px 10px 30px 10px;
+    padding-right: 10px;
+    width: 350px;
+    height: 150px;
+}
+
+.buttonhint {
+    background-color: mediumturquoise;
+    border: 0px solid white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 0;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.buttonhint:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.hintcontent {
+    text-align: left;
+}
+
+.modal-content {
+    width: 300px;
+    height: 300px;
+    background-color: white; 
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.text-hint {
+    text-align: right;
+}
